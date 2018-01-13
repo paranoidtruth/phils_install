@@ -70,20 +70,27 @@ Follow the LINUX directions from: http://www.philscurrency.com/documentation/
 But STOP immediately after you login with PUTTY (or terminal if using a mac).  
 DO NOT DO ANY OTHER STEPS FROM THAT GUIDE
 From that point on, follow this guide
-Do all commands EXACTLY as written
+copy-paste all commands EXACTLY as written (right click will paste into linux)
 Lines with a # in front are just comments/notes
 ***************************************************************************************** 
 
-#download our 2 install scripts:
+#download our user scripts:
 wget https://raw.githubusercontent.com/paranoidtruth/phils_install/master/add_user.sh
-wget https://raw.githubusercontent.com/paranoidtruth/phils_install/master/phils_install.sh
 
 #we are going to use the script to add a user, something like philsadmin, keep it simple, no spaces/special charcters
+sudo chmod +x add_user.sh
+#you can skip all the name/phone,etc, just hit enter
 sh add_user.sh
 
-#now, you should be logged in as that new user.  Run the install script:
+slsjsljsljs
+
+#now, you should be logged in as that new user, and we download and run the install script:
+wget https://raw.githubusercontent.com/paranoidtruth/phils_install/master/phils_install.sh
 sudo chmod +x phils_install.sh
+#you WILL NEED your genkey you created in the windows steps, copy it, right click to paste when asked for it
 sh phils_install.sh
+
+sjslfjsljslfjslfjsf
 
 #your wallet should now be running, verify:
 philscurrency-cli getmininginfo
@@ -124,9 +131,6 @@ philscurrency-cli masternode list | grep xxxx
 #double check in masternodes.online, search by IP or MN Address (pub key)
 #might take a couple minutes to show up there
 
-#NOW THAT EVERYTHING IS WORKING, ENABLE FIREWALL.  DO NOT SKIP THIS STEP !!!
-sudo ufw enable #(say yes)
- 
 #FYI: HELPFUL commands in the VPS:
 philscurrencyd #starts wallet/masternode 
 philscurrency-cli stop #stops 

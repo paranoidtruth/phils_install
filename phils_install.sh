@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo "==================================================================" 
 echo echo "Welcome to the installation of your PhilsCurrency Masternode" 
 echo " ************ STEP 2: WALLET INSTALL *****************" 
@@ -14,8 +15,6 @@ PASSWORD=$(pwgen -s 64 1)
 WANIP=$(dig +short myip.opendns.com @resolver1.opendns.com) 
 
 echo -n "Installing with GENKEY: $GENKEY, RPC PASS: $PASSWORD, VPS IP: $WANIP"
-
-exit 1
 
 #begin optional swap section
 echo "Setting up disk swap..." 
@@ -45,8 +44,8 @@ sleep 10
 philscurrency-cli stop 
 
 echo "creating config..." 
-cat <<EOF > 
-~/.philscurrency/philscurrency.conf 
+
+cat <<EOF > ~/.philscurrency/philscurrency.conf 
 rpcuser=philsadminrpc 
 rpcpassword=$PASSWORD 
 rpcallowip=127.0.0.1 
@@ -60,8 +59,8 @@ externalip=$WANIP:36003
 masternodeprivkey=$GENKEY
 addnode=52.14.182.71:36003 
 addnode=13.59.107.218:36003 
-addnode=52.14.113.155:36003 
-EOF 
+addnode=52.14.113.155:36003
+EOF
 
 echo "config completed, restarting wallet..." 
 philscurrencyd 
@@ -82,7 +81,7 @@ sudo ufw status
 sudo ufw enable
 
 #fail2ban:
-sudo systemctl enable fail2ban 
-sudo systemctl start fail2ban 
+sudo systemctl enable fail2ban
+sudo systemctl start fail2ban
 echo "basic security completed..."
 echo "Go finish the WINDOWS (or mac) setup, then return here"
