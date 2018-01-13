@@ -74,7 +74,7 @@ copy-paste all commands EXACTLY as written (right click will paste into linux)
 Lines with a # in front are just comments/notes
 ***************************************************************************************** 
 
-#download our user scripts:
+#download our user script:
 wget https://raw.githubusercontent.com/paranoidtruth/phils_install/master/add_user.sh
 
 #we are going to use the script to add a user, something like philsadmin, keep it simple, no spaces/special charcters
@@ -82,15 +82,12 @@ sudo chmod +x add_user.sh
 #you can skip all the name/phone,etc, just hit enter
 sh add_user.sh
 
-slsjsljsljs
-
 #now, you should be logged in as that new user, and we download and run the install script:
 wget https://raw.githubusercontent.com/paranoidtruth/phils_install/master/phils_install.sh
 sudo chmod +x phils_install.sh
 #you WILL NEED your genkey you created in the windows steps, copy it, right click to paste when asked for it
 sh phils_install.sh
-
-sjslfjsljslfjslfjsf
+#enter y at the end to enable firewall
 
 #your wallet should now be running, verify:
 philscurrency-cli getmininginfo
