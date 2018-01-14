@@ -84,4 +84,7 @@ sudo ufw enable
 sudo systemctl enable fail2ban
 sudo systemctl start fail2ban
 echo "basic security completed..."
-echo "Go finish the WINDOWS (or mac) setup, then return here"
+
+echo "philscurrency-cli getmininginfo"
+philscurrency-cli getmininginfo
+echo "Finished!  once the blockchain sync has finished you can do the final checks in the guide"
