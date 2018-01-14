@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "==================================================================" 
-echo echo "Welcome to the installation of your PhilsCurrency Masternode" 
+echo "Welcome to the installation of your PhilsCurrency Masternode" 
 echo " ************ STEP 2: WALLET INSTALL *****************" 
 echo "==================================================================" 
 echo "Installing, this will take appx 2 min to run..."
