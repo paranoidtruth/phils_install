@@ -35,7 +35,9 @@ copy/save that output to a file.  Don’t lose it, you will need it for the VPS 
 You will use the genkey & txid in just a minute for window conf...
 
 Now edit two windows conf files, just use notepad.  
-Find conf files in: c:\users\your_user_name\AppData\Roaming\Philscurrency
+Find conf files in: c:\users\<username>\AppData\Roaming\Philscurrency
+(mac users: /Users/<username>/Library/Application Support/Philscurrency/)
+
 Open the philscurrency.conf:
 Make it look exactly like this (replace with your own pass)
 rpcuser=phils
