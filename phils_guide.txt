@@ -53,7 +53,7 @@ Save it.
 Open the masternode.conf file (use notepad).
 Make it look exactly like this, but swap out your vps IP, genkey, and txid from above
 Also, your index which was probably 0
-MN1 YOURIP:36003 your_genkey_goes_here your_tx_id_goes_here 0
+MN1 VPSIP:36003 your_genkey_goes_here your_tx_id_goes_here 0
 
 that's it, that file only needs 1 line (unless you have 2 MN, then it will have 2 lines, etc).
 Save it.
