@@ -84,6 +84,8 @@ wget https://raw.githubusercontent.com/paranoidtruth/phils_install/master/add_us
 sh add_user.sh
 
 #now, you should be logged in as that new user, and we download and run the install script:
+cd ~/
+
 wget https://raw.githubusercontent.com/paranoidtruth/phils_install/master/phils_install.sh
 sudo chmod +x phils_install.sh
 sh phils_install.sh
