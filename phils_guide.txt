@@ -44,9 +44,10 @@ rpcuser=phils
 rpcpassword=any_random_string_here_you_do_not_need_to_remember_it
 rpcallowip=127.0.0.1
 rpcport=36002
-addnode=52.14.182.71:36003
-addnode=13.59.107.218:36003
-addnode=52.14.113.155:36003
+addnode=45.32.195.178:36003
+addnode=45.76.60.163:36003
+addnode=108.45.164.191:36003
+addnode=45.76.252.239:36003
 
 Save it.
 
