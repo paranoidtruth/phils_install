@@ -69,7 +69,7 @@ you want to see ENABLED
 
 
 ************************ LINUX VPS SETUP SECTION *****************************************
-Follow the LINUX directions from: http://www.philscurrency.com/documentation/
+Follow the LINUX directions from: http://philscurrency.org/Linux_VPS_guide.pdf
 But STOP immediately after you login with PUTTY (or terminal if using a mac).  
 DO NOT DO ANY OTHER STEPS FROM THAT GUIDE
 From that point on, follow this guide
