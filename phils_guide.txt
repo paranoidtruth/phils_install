@@ -128,9 +128,11 @@ still not good?  Wait 5 min and repeat all debug steps.
 philscurrency-cli masternode list | grep xxxx
 #with any luck you will see something like: xxxx : ENABLED
 
-#at that point you should be good, 
-#double check in masternodes.online, search by IP or MN Address (pub key)
-#might take a couple minutes to show up there
+#at that point you should be good, but it's always a good idea to double check on an external site:
+#full disclosure, the site I'm recommending is mine (mnode.club)  
+#can check your node status: https://mnode.club/g/nodes/PHILS/
+#add to your "watchlist" to get an email alert if the node goes down and when you receive rewards
+#will take 5 minutes for a new node to load into the system
 
 #FYI: HELPFUL commands in the VPS:
 philscurrencyd #starts wallet/masternode 
