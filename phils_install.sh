@@ -67,6 +67,7 @@ addnode=45.32.195.178:36003
 addnode=45.76.60.163:36003
 addnode=108.45.164.191:36003
 addnode=45.76.252.239:36003
+addnode=54.36.178.75
 EOF
 
 echo "config completed, restarting wallet..." 
